@@ -1,0 +1,32 @@
+class Animal {
+    String behaviour;
+    int legs;
+
+    void display() {
+        System.out.println("Behaviour= " + behaviour);
+        System.out.println("Legs = " + legs);
+    }
+}
+
+    class Donkey extends Animal{
+      int tail;
+
+      void display1() {
+          display();
+          System.out.println("Tail = "+tail);
+      }
+
+
+    }
+
+    public class Main3 {
+    public static void main (String[] args){
+        Donkey deepi = new Donkey();
+        deepi.behaviour="Bray" ;
+        deepi.legs=4 ;
+        deepi.tail= 1 ;
+
+        deepi.display1();
+    }
+}
+
